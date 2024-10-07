@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos Coreanos - Proyecto Escolar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="header-container">
+            <img src="imagenes/logo.jpeg" alt="Logo de la Tienda" class="logo">
+            <div class="title-container">
+                <h1>Tienda de Productos Coreanos</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Explora productos tradicionales coreanos</h2>
+        <p>Compra ficticia de productos culturales, cosméticos y más.</p>
+    </section>
+
+    <!-- Catálogo de Productos Coreanos -->
+    <section id="catalogo" class="catalogo">
+        <h2>Catálogo de Productos</h2>
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product-item">
+                <img src="imagenes/shopping.webp" alt="Mascarillas">
+                <h3>Mascarilla de arcilla</h3>
+                <p>Calma la piel sensible y purifica los poros para una piel clara y saludable.</p>
+                <p><strong>Precio: $261.79</strong></p>
+                <button class="btn" onclick="showAlert()">Comprar</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-item">
+                <img src="imagenes/blush.webp" alt="Maquillaje">
+                <h3>RUBOR</h3>
+                <p>Rubor Pixi on-the-glow (19g, rubí).</p>
+                <p><strong>Precio: $422.00</strong></p>
+                <button class="btn" onclick="showAlert()">Comprar</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-item">
+                <img src="imagenes/parche.webp" alt="Mascarilla">
+                <h3>Mascarilla para Ojos</h3>
+                <p>Parches para los ojos con colágeno y escualano para hidratar la piel, reducir la hinchazón y minimizar la aparición de líneas finas.</p>
+                <p><strong>Precio: $261.79</strong></p>
+                <button class="btn" onclick="showAlert()">Comprar</button>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-item">
+                <img src="imagenes/labial.webp" alt="Maquillaje">
+                <h3>Sheglam - Brillo labial </h3>
+                <p>Aceite labial hidratante no pegajoso, hidratante y voluminizador.</p>
+                <p><strong>Precio: $14.99</strong> </p>
+                <button class="btn" onclick="showAlert()">Comprar</button>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="product-item">
+                <img src="imagenes/XXL_p0187352748.webp" alt="Mascarilla">
+                <h3>Mascarillas con Ácido Hialurónico </h3>
+                <p>Rose Hyaluronic Hydra Wash Off Mask Pack.</p>
+                <p><strong>Precio: $198 .99</strong> </p>
+                <button class="btn" onclick="showAlert()">Comprar</button>
+            </div>
+            
+            <!-- Producto 6 -->
+            <div class="product-item">
+                <img src="imagenes/XXL_p0199005939.webp" alt="Maquillaje">
+                <h3>LANEIGE </h3>
+                <p>Base de Maquillaje Estilo Cushion Neo Cushion Matte Set.</p>
+                <p><strong>Precio: $234.99</strong> </p>
+                <button class="btn" onclick="showAlert()">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="blog">
+        <h2>Blog de Cultura Coreana</h2>
+        <article>
+            <h3>¿Por qué la cosmética coreana es tan popular?</h3>
+            <p>La cosmética coreana se caracteriza por el uso de ingredientes naturales como la baba de caracol, la centella asiática, el sésamo o el bambú.</p>
+        </article>
+
+        <article>
+            <h3>¿Qué tan buenos son los productos de belleza coreanos?</h3>
+            <p>Se caracterizan por la alta calidad de sus ingredientes. En la mayoría de los casos, son productos que contienen una gran cantidad de elementos naturales. Una vez que los pruebes, te darás cuenta de su eficacia. Precio razonable.</p>
+        </article>
+    </section>
+
+    <!-- Contacto (Chat ficticio) -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <p>Déjanos un mensaje en el chat</p>
+        <div class="chat-container">
+            <div id="chat-box"></div>
+            <input type="text" id="chat-input" placeholder="Estamos a tus órdenes">
+            <button id="chat-send" onclick="sendMessage()">Enviar</button>
+        </div>
+    </section>
+
+    <!-- Créditos -->
+    <footer>
+        <p>Desarrollado por: <strong>@ Angela Lizeth Vergara López</strong></p>
+        <p>Este sitio es un proyecto escolar y no ofrece contenido real.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
