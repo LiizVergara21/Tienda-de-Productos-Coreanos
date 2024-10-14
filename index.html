@@ -41,7 +41,7 @@
                 <h3>Mascarilla de arcilla</h3>
                 <p>Calma la piel sensible y purifica los poros para una piel clara y saludable.</p>
                 <p><strong>Precio: $261.79</strong></p>
-                <button class="btn" onclick="showAlert()">Comprar</button>
+                <button class="btn" onclick="addToCart('Mascarilla de arcilla', 261.79)">Comprar</button>
             </div>
 
             <!-- Producto 2 -->
@@ -50,7 +50,7 @@
                 <h3>RUBOR</h3>
                 <p>Rubor Pixi on-the-glow (19g, rubí).</p>
                 <p><strong>Precio: $422.00</strong></p>
-                <button class="btn" onclick="showAlert()">Comprar</button>
+                <button class="btn" onclick="addToCart('RUBOR', 422.00)">Comprar</button>
             </div>
 
             <!-- Producto 3 -->
@@ -59,7 +59,7 @@
                 <h3>Mascarilla para Ojos</h3>
                 <p>Parches para los ojos con colágeno y escualano para hidratar la piel, reducir la hinchazón y minimizar la aparición de líneas finas.</p>
                 <p><strong>Precio: $261.79</strong></p>
-                <button class="btn" onclick="showAlert()">Comprar</button>
+                <button class="btn" onclick="addToCart('Mascarilla para Ojos', 261.79)">Comprar</button>
             </div>
 
             <!-- Producto 4 -->
@@ -68,7 +68,7 @@
                 <h3>Sheglam - Brillo labial </h3>
                 <p>Aceite labial hidratante no pegajoso, hidratante y voluminizador.</p>
                 <p><strong>Precio: $14.99</strong> </p>
-                <button class="btn" onclick="showAlert()">Comprar</button>
+                <button class="btn" onclick="addToCart('Sheglam - Brillo labial', 14.99)">Comprar</button>
             </div>
 
             <!-- Producto 5 -->
@@ -76,8 +76,8 @@
                 <img src="imagenes/XXL_p0187352748.webp" alt="Mascarilla">
                 <h3>Mascarillas con Ácido Hialurónico </h3>
                 <p>Rose Hyaluronic Hydra Wash Off Mask Pack.</p>
-                <p><strong>Precio: $198 .99</strong> </p>
-                <button class="btn" onclick="showAlert()">Comprar</button>
+                <p><strong>Precio: $198.99</strong> </p>
+                <button class="btn" onclick="addToCart('Mascarillas con Ácido Hialurónico', 198.99)">Comprar</button>
             </div>
             
             <!-- Producto 6 -->
@@ -86,9 +86,19 @@
                 <h3>LANEIGE </h3>
                 <p>Base de Maquillaje Estilo Cushion Neo Cushion Matte Set.</p>
                 <p><strong>Precio: $234.99</strong> </p>
-                <button class="btn" onclick="showAlert()">Comprar</button>
+                <button class="btn" onclick="addToCart('LANEIGE Base de Maquillaje', 234.99)">Comprar</button>
             </div>
         </div>
+    </section>
+
+    <!-- Sección del Carrito de Compras -->
+    <section id="carrito" class="cart-container">
+        <h2>Tu Carrito</h2>
+        <div id="cart-items" class="cart-items">
+            <p>Tu carrito está vacío.</p>
+        </div>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button class="checkout-btn" onclick="checkout()">Finalizar Compra</button>
     </section>
 
     <!-- Blog -->
